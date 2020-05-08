@@ -79,6 +79,11 @@ textarea {
   width: 100%;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: whitesmoke;
+}
+
 /* nav */
 nav {
   width: 100%;
