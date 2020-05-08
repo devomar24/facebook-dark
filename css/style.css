@@ -1,0 +1,624 @@
+/* file map 
+1.defaul css
+2.nav 
+3. main > 3.1 sidenav
+3. main > 3.2 posts
+3. main > 3.3 stories
+4.chats and contacts 
+*/
+
+/********************************************/
+/********************************************/
+/* 
+omaryassir124@gmail.com
+
+Have Fun :) 
+
+*/
+/********************************************/
+/********************************************/
+/* import POPPINS font from google */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/* defaul css */
+body,
+html {
+  background: #0E1436;
+  font-family: Poppins !important;
+  overflow-x: hidden;
+  color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* grouping */
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+h4,
+a,
+p,
+i {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.profile {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  border: 0;
+  padding-left: 10px;
+  color: #ffffff;
+  font-size: 0.8888rem;
+  outline: none;
+  width: 100%;
+}
+
+/* nav */
+nav {
+  width: 100%;
+  background-color: #1A275B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgb(58, 46, 224);
+}
+
+nav .first,
+nav .second {
+  display: flex;
+}
+
+nav .first h4 {
+  text-transform: capitalize;
+  margin-right: 20px;
+  border-right: 2px solid lightgray;
+  padding-right: 30px;
+}
+
+nav .second i {
+  margin: 18px 10px;
+}
+
+nav .second i.fa-comment-o {
+  position: relative;
+  margin-right: 30px;
+}
+
+.search {
+  display: flex;
+}
+
+.search i {
+  margin-top: 6px;
+}
+
+nav .second i.fa-comment-o::after {
+  content: '5';
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  color: #0E1436;
+  border-radius: 50%;
+  font-weight: 600;
+  position: absolute;
+  top: -10px;
+  font-size: 0.77777rem;
+  right: -9px;
+}
+
+nav .second .dots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+nav .second .dots span {
+  height: 5px;
+  width: 5px;
+  background-color: rgb(170, 170, 170);
+  border-radius: 50%;
+  margin: 2px;
+}
+
+
+/* main content sidenav - posts - stories - chats */
+.main .sidenav {
+  background-color: #1A275B;
+  height: auto;
+  padding: 0;
+}
+
+.main .sidenav .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 20px 35px;
+}
+
+.main .sidenav .header i {
+  margin-top: 4px;
+}
+
+.main .sidenav .list ul {
+  list-style: none;
+}
+
+.main .sidenav .list ul li {
+  margin-top: 10px;
+  font-size: 0.77777rem;
+  padding: 10px 35px;
+  font-weight: 600;
+}
+
+.main .sidenav .list ul li.active {
+  background-color: rgb(84, 86, 233);
+  border-left: 20px solid rgb(46, 49, 201);
+  padding-left: 13px;
+}
+
+.main .sidenav .list ul li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main .sidenav .list ul li a i {
+  padding-right: 10px;
+}
+
+/* favs */
+.main .sidenav .favs ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .sidenav .favs ul li .category {
+  display: flex;
+}
+
+.main .sidenav .favs ul li .category .image {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.main .sidenav .favs ul li .category p {
+  margin-top: 7px;
+  text-transform: capitalize;
+}
+
+.main .sidenav .favs ul li span {
+  margin-top: 8px;
+}
+
+/* posts and stories */
+.main .bigArea {
+  padding: 30px;
+}
+
+.main .bigArea .update {
+  margin-bottom: 20px;
+  background-color: #1A275B;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  border-radius: 3px;
+}
+
+.main .bigArea .parent .update .upper,
+.main .bigArea .parent .update .activity {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0 0 0;
+  border-bottom: 1px solid rgb(58, 46, 224);
+}
+
+.main .bigArea .parent .update .upper p,
+.main .bigArea .parent .update .activity p {
+  font-size: 0.77777rem;
+  font-weight: 500;
+  border-right: 2px solid white;
+  padding-right: 50px;
+  cursor: pointer;
+}
+
+.main .bigArea .parent .update .upper p i,
+.main .bigArea .parent .update .activity p i {
+  padding-right: 8px;
+}
+
+.main .bigArea .parent .update .upper p.none,
+.main .bigArea .parent .update .activity p.none {
+  border: none;
+}
+
+.main .bigArea .parent .update .write {
+  padding: 20px;
+  display: flex;
+  border-bottom: 1px solid rgb(58, 46, 224);
+}
+
+.main .bigArea .parent .update .write textarea {
+  padding: 10px 0 0 0;
+  width: 100%;
+  resize: none;
+}
+
+.main .bigArea .parent .update .activity {
+  border: none;
+}
+
+.main .bigArea .parent .update .activity p {
+  padding-top: 10px;
+}
+
+/* timeline */
+.main .bigArea .parent .timeline {
+  background-color: #1A275B;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.main .bigArea .parent .timeline .post-info,
+.main .bigArea .parent .timeline .post-info .perosn,
+.main .bigArea .parent .timeline .post-info .dots {
+  display: flex;
+}
+
+.main .bigArea .parent .timeline .post-info .perosn .profile {
+  margin-top: 6px;
+}
+
+.main .bigArea .parent .timeline .post-info {
+  justify-content: space-between;
+}
+
+.main .bigArea .parent .timeline .post-info .perosn .desc h6 {
+  padding: 6px 0 0 0;
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.main .bigArea .parent .timeline .post-info .perosn .desc p {
+  color: lightgray;
+  font-size: 0.777rem;
+  text-transform: capitalize;
+}
+
+.main .bigArea .parent .timeline .post-info .perosn .desc p span {
+  font-size: 0.8888rem;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 500;
+}
+
+.main .bigArea .parent .timeline .post-info .dots span {
+  height: 5px;
+  width: 5px;
+  background-color: rgb(170, 170, 170);
+  border-radius: 50%;
+  margin: 2px;
+}
+
+/* post images */
+.main .bigArea .parent .timeline p {
+  font-size: 0.8888rem;
+  text-transform: initial;
+}
+
+.main .bigArea .parent .timeline .post-content .imgs {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+}
+
+.main .bigArea .parent .timeline .post-content .imgs .left,
+.main .bigArea .parent .timeline .post-content .imgs .right {
+  height: 100%;
+  margin: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.main .bigArea .parent .timeline .post-content .imgs .left {
+  flex: 1;
+}
+
+.main .bigArea .parent .timeline .post-content .imgs .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .bigArea .parent .timeline .post-content .imgs .right .sm {
+  width: 100%;
+  height: 50%;
+  margin: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+/* actions */
+.main .bigArea .parent .timeline .actions {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 30px 10px 10px 10px;
+  border-bottom: 1px solid rgb(58, 46, 224);
+}
+
+.main .bigArea .parent .timeline .actions p {
+  font-size: 0.77777rem;
+  font-weight: 500;
+  border-right: 2px solid white;
+  padding-right: 50px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.main .bigArea .parent .timeline .actions p i {
+  padding-right: 8px;
+}
+
+.main .bigArea .parent .timeline .actions p.none {
+  border: 0;
+}
+
+/* reactions */
+.main .bigArea .parent .timeline .reations {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 10px 0 0 0;
+  border-bottom: 1px solid rgb(58, 46, 224);
+}
+
+.main .bigArea .parent .timeline .reations i {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 50px;
+  font-size: 0.777rem;
+}
+
+.main .bigArea .parent .timeline .reations i.fa-heart {
+  background-color: rgb(167, 11, 71);
+  box-shadow: 0 0 10px rgba(129, 33, 89, 0.7);
+}
+
+.main .bigArea .parent .timeline .reations i.fa-thumbs-up {
+  background-color: rgb(11, 79, 167);
+  box-shadow: 0 0 10px rgba(33, 91, 129, 0.7);
+  position: absolute;
+  left: 13px;
+}
+
+.main .bigArea .parent .timeline .reations p {
+  margin-left: 20px;
+  padding-top: 3px;
+  font-size: 0.7777rem;
+  color: lightgray
+}
+
+.main .bigArea .parent .timeline .comment {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 10px 0;
+}
+
+.main .bigArea .parent .timeline .comment .add {
+  display: flex;
+}
+
+.main .bigArea .parent .timeline .comment .add input {
+  padding: 0;
+}
+
+.main .bigArea .parent .timeline .comment .other i {
+  margin-right: 10px;
+}
+
+/* strories and events */
+.stories .parent .story-slider {
+  height: auto;
+  background-color: #1A275B;
+  padding-bottom: 5px;
+  border-radius: 3px;
+}
+
+.stories .parent .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px 10px 20px;
+  border-bottom: 1px solid rgb(58, 46, 224);
+  border-radius: 3px;
+}
+
+.stories .parent .slider-parent {
+  padding: 10px;
+}
+
+.stories .parent .item .story-image {
+  height: 30vh;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+}
+
+.stories .parent .item .layer {
+  position: absolute;
+  height: 30vh;
+  width: 100%;
+  background-color: rgba(85, 26, 221, 0.384);
+  z-index: 2;
+  border-radius: 3px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stories .parent .item .layer .profile {
+  border: 3px solid #ffffff;
+}
+
+.stories .parent .item .layer h6 {
+  font-size: 0.777rem;
+  color: white;
+  font-weight: 500;
+}
+
+.stories .parent .events,
+.stories .parent .pages {
+  margin-top: 20px;
+  background-color: #1A275B;
+  padding: 30px 20px 20px 20px;
+  border-radius: 3px
+}
+
+.stories .parent .events p {
+  font-size: 0.7777rem;
+  font-weight: 500;
+}
+
+.stories .parent .events p i {
+  padding-right: 8px;
+}
+
+.stories .parent .events p.sec {
+  margin-top: 20px;
+}
+
+.stories .parent .pages {
+  padding: 0;
+}
+
+.stories .parent .pages .owner {
+  padding: 20px 10px 10px 10px;
+  display: flex;
+}
+
+.stories .parent .pages .owner p {
+  font-size: 0.7777rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.stories .parent .pages .owner p span {
+  color: lightgray;
+}
+
+.stories .parent .pages .page-image {
+  width: 90%;
+  margin: 10px auto 30px auto;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.stories .parent .pages .like {
+  padding: 20px 10px 10px 10px;
+  border-top: 1px solid rgb(58, 46, 224);
+}
+
+.stories .parent .pages .like p {
+  font-size: 0.88888rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.stories .parent .pages .like p i {
+  padding-right: 8px;
+}
+
+
+/* chats and contacts */
+.chatting {
+  background-color: #1A275B;
+  height: auto;
+  padding: 10px;
+}
+
+.chatting p.title {
+  font-size: 0.7777rem;
+  color: lightgray;
+  text-transform: uppercase;
+  padding: 20px 10px 10px 10px;
+}
+
+.chatting ul {
+  list-style: none;
+}
+
+.chatting ul li {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.basic {
+  display: flex;
+}
+
+.chatting ul li .profile {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.chatting ul li h6 {
+  font-size: 0.777rem;
+  margin-top: 10px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.chatting ul li .state {
+  height: 8px;
+  width: 8px;
+  background-color: rgb(55, 235, 160);
+  border-radius: 50%;
+  margin: 13px 0 0 0;
+}
+
+.chatting ul li .time span {
+  color: lightgray;
+  font-size: 0.66666rem;
+}
